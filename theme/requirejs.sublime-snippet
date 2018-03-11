@@ -1,0 +1,34 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+var config = {
+    "waitSeconds": 0,
+    "map": {
+        "*": {
+            "slick": "js/slick.min" // Third party javascript, Location : web/js/slick.min.js
+        }
+    },
+    "paths": {
+        "slick": 'js/slick.min', // Third party javascript, Location : web/js/slick.min.js
+    },
+    "shim": {
+        "slick": ["jquery"], // jquery is required for slick
+        "js/${1:Vendor}-${2:Custom}": ["jquery"], // Location : app/frontend/<vendor>/<theme>/web/js/<filename>.js
+    },
+    "deps": [
+        "js/${1:Vendor}-${2:Custom}" // Location : app/frontend/<vendor>/<theme>/web/js/<filename>.js
+    ]
+};
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-requirejs</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Theme : requirejs-config.js</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>

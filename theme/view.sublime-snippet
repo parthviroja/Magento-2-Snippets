@@ -1,0 +1,56 @@
+<snippet>
+	<content><![CDATA[
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<view xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/view.xsd">
+    <media>
+        <images module="Magento_Catalog">
+            <image id="product_base_image" type="image">
+                <width>256</width>
+                <height>256</height>
+            </image>
+            <image id="product_page_image_small" type="thumbnail">
+                <width>48</width>
+                <height>48</height>
+            </image>
+            <image id="product_page_main_image" type="image">
+                <width>512</width>
+                <height>512</height>
+            </image>
+            <image id="product_page_main_image_default" type="image">
+                <width>512</width>
+                <height>512</height>
+            </image>
+            <image id="product_small_image" type="small_image">
+                <width>128</width>
+                <height>128</height>
+            </image>
+            <image id="product_thumbnail_image" type="thumbnail">
+                <width>48</width>
+                <height>48</height>
+            </image>
+        </images>
+    </media>
+    <vars module="Magento_Catalog">
+        <var name="product_base_image_size">256</var>
+    </vars>
+    <exclude>
+        <item type="file">Lib::jquery/jquery.min.js</item>
+    </exclude>
+</view>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-view</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Theme : view.xml</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>

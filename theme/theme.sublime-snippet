@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 ${1:Vendor}, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
+     <title>${1:Vendor} ${2:Custom} Theme</title> <!-- your theme's name -->
+     <parent>Magento/blank</parent> <!-- the parent theme, in case your theme inherits from an existing theme -->
+     <media>
+         <preview_image>media/${1:Vendor}-${2:Custom}.png</preview_image>
+     </media>
+ </theme>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-theme</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Theme : theme.xml</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>

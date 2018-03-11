@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+{
+    "name": "${1:vendor}/theme-frontend-${2:custom}",
+    "description": "N/A",
+    "require": {
+        "php": "~5.5.0|~5.6.0|~7.0.0",
+        "magento/theme-frontend-${3:blank}": "100.0.*",
+        "magento/framework": "100.0.*"
+    },
+    "type": "magento2-theme",
+    "version": "100.0.1",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-composer</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Theme : Composer.json</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>
