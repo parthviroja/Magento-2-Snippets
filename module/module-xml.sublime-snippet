@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+<?xml version="1.0"?>
+<!--
+/***
+ * Copyright © 2018 ${1:Vendor}. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="${1:Vendor}_${2:SampleModule}" setup_version="${3:1.0.0}">
+	    ${4:<sequence>
+	        <module name="Magento_${5:Catalog}"/>${0}
+	    </sequence>}
+    </module>
+</config>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-mod-xml</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Module : etc/module.xml</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>

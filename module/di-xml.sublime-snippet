@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2018 ${1:Vendor}. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+	<!-- Custom Preference -->
+    <preference for="Magento\Checkout\Controller\Cart\Add" type="${1:Vendor}\\${2:SampleModule}\Controller\Cart\Add" sortOrder="1"/>
+
+    <!-- Custom Plugin -->
+	<type name="Magento\Checkout\Model\Cart">
+		<plugin name="${1/(.+)/\L$1/g}_${2/(.+)/\L$1/g}_addtocart" type="${1:Vendor}\\${2:SampleModule}\Model\Cart" />
+	</type>
+	${0}
+</config>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-mod-di</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Module : etc/di.xml</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>

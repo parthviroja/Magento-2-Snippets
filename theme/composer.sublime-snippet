@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 {
-    "name": "${1:vendor}/theme-frontend-${2:custom}",
+    "name": "${1:vendor}/theme-frontend-${2:sample}",
     "description": "N/A",
     "require": {
         "php": "~5.5.0|~5.6.0|~7.0.0",
@@ -9,7 +9,7 @@
         "magento/framework": "100.0.*"
     },
     "type": "magento2-theme",
-    "version": "100.0.1",
+    "version": "1.0.0",
     "license": [
         "OSL-3.0",
         "AFL-3.0"

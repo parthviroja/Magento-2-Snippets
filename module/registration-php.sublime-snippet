@@ -6,16 +6,16 @@
  * See COPYING.txt for license details.
  */
 \Magento\Framework\Component\ComponentRegistrar::register(
-    \Magento\Framework\Component\ComponentRegistrar::THEME,
-    'frontend/${1:Vendor}/${2:Sample}',
+    \Magento\Framework\Component\ComponentRegistrar::MODULE,
+    '${1:Vendor}_${2:ModuleName}',
     __DIR__
 );
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>mg-registration</tabTrigger>
+	<tabTrigger>mg-mod-registration</tabTrigger>
 
 	<!-- Optional: Set Description -->
-	<description>Theme : Registration.php</description>
+	<description>Module : registration.php</description>
 
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>text.xml</scope> -->

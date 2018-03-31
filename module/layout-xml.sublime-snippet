@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2018 ${1:Vendor}. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+    	<referenceContainer name="${2:content}">
+    		<block class="${3:Magento\Framework\View\Element\Template}" name="${1/(.+)/\L$1/g}.sample.${4:custom}" template="${4:custom}.phtml"/>${0}
+        </referenceContainer>
+    </body>
+</page>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-mod-layout</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Module : layout/*.xml</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>

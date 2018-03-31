@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+{
+    "name": "${1:vendor}/${2:sample-module}",
+    "description": "N/A",
+    "type": "magento2-module",
+    "require": {
+        "php": "~5.5.0|~5.6.0|~7.0.0"
+    },
+    "version": "1.0.0",
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "${1/(.+)/\u$1/g}\\\\${2/(\b\w)|(\W)/(?2\u\1:)(?2:)/g}":""
+        }
+    }
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-mod-composer</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Module : composer.json</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>
