@@ -1,0 +1,39 @@
+<snippet>
+	<content><![CDATA[
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2018 ${1:Vendor}. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="${1/(.+)/\L$1/g}" translate="label" sortOrder="1">
+            <label>Magevilla</label>
+        </tab>
+        <section id="${2/(.+)/\L$1/g}" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+            <class>${2/(.+)/\L$1/g}</class>
+            <label>${2:Sample}</label>
+            <tab>${1/(.+)/\L$1/g}</tab>
+            <resource>${1:Vendor}_${2:Sample}::${2/(.+)/\L$1/g}</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <label>${2:Sample} Configuration</label>
+                <field id="enable" translate="Enable ${2:Sample}" type="select" sortOrder="10"  showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enable ${2:Sample}</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-mod-system</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Module : etc/*/system.xml</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2018 ${1:Vendor}. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="${3:standard}">
+        <route id="${2/(.+)/\L$1/g}" frontName="${2/(.+)/\L$1/g}">
+            <module name="${1:Vendor}_${2:Sample}" />${0}
+        </route>
+    </router>
+</config>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-mod-routes</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Module : etc/*/routes.xml</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>

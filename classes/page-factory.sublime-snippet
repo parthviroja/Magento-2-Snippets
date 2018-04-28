@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[\Magento\Framework\View\Result\PageFactory${1:}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-class-page-factory</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Class : \Magento\Framework\View\Result\PageFactory</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>

@@ -19,7 +19,7 @@
 	<tabTrigger>mg-mod-layout</tabTrigger>
 
 	<!-- Optional: Set Description -->
-	<description>Module : layout/*.xml</description>
+	<description>Module : view/*/layout/*.xml</description>
 
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>text.xml</scope> -->

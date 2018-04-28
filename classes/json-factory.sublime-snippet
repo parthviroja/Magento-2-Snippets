@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[\Magento\Framework\Controller\Result\JsonFactory${1:}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-class-json-factory</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Class : \Magento\Framework\Controller\Result\JsonFactory</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>

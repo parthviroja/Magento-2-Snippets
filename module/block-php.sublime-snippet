@@ -1,0 +1,40 @@
+<snippet>
+	<content><![CDATA[
+<?php
+/**
+ * Copyright © 2018 ${1:Vendor}. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+namespace ${1:Vendor}\\${2:Sample}\Block;
+
+class ${2:Sample} extends \Magento\Framework\View\Element\Template
+{
+
+	protected \$_template = '${2/(.+)/\L$1/g}.phtml';
+
+	public function __construct(
+		\Magento\Framework\View\Element\Template\Context \$context,
+		array \$data = array()
+	){
+        parent::__construct(\$context, \$data);
+    }
+
+	public function getTitle()
+	{
+		return "Block Name";
+	}
+
+	${0}
+
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-mod-block</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Module : Block/*.php</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>

@@ -1,21 +1,17 @@
 <snippet>
 	<content><![CDATA[
-<?php
+<!--
 /**
  * Copyright © 2018 ${1:Vendor}. All rights reserved.
  * See COPYING.txt for license details.
  */
-\Magento\Framework\Component\ComponentRegistrar::register(
-    \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    '${1:Vendor}_${2:Sample}',
-    __DIR__
-);
+-->
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>mg-mod-registration</tabTrigger>
+	<tabTrigger>cx</tabTrigger>
 
 	<!-- Optional: Set Description -->
-	<description>Module : registration.php</description>
+	<description>Comments : XML</description>
 
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>text.xml</scope> -->

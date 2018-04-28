@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[\Magento\Store\Model\StoreManagerInterface${1:}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-class-store-manager-interface</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Class : \Magento\Store\Model\StoreManagerInterface</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>

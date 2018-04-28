@@ -10,6 +10,12 @@
     },
     "type": "magento2-theme",
     "version": "1.0.0",
+    "authors": [{
+        "name": "${1:vendor}",
+        "email": "${1/(.+)/\u$1/g}@gmail.com",
+        "homepage": "https://www.${1/(.+)/\u$1/g}.com",
+        "role": "Company"
+    }],
     "license": [
         "OSL-3.0",
         "AFL-3.0"

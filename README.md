@@ -14,8 +14,7 @@ git clone https://github.com/parthviroja/Magento-2-Snippets.git Magento-2-Snippe
 
 
 ## Authors
-Parth Viroja
-[parthviroja.github.io](https://parthviroja.github.io)
+Parth Viroja: [parthviroja.github.io](https://parthviroja.github.io)
 
 
 ## Copyright and License

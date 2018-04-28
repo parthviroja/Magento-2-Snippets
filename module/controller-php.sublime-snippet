@@ -1,0 +1,47 @@
+<snippet>
+	<content><![CDATA[
+<?php
+/**
+ * Copyright © 2018 ${1:Vendor}. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+namespace ${1:Vendor}\\${2:Sample}\Controller\Index;
+
+class Index extends \Magento\Framework\App\Action\Action
+{
+    /** @var \Magento\Framework\View\Result\PageFactory  */
+    protected \$resultPageFactory;
+
+    public function __construct(
+        \Magento\Framework\App\Action\Context \$context,
+        \Magento\Framework\View\Result\PageFactory \$resultPageFactory,
+        \Magento\Framework\Message\ManagerInterface \$messageManager,
+    ) {
+        \$this->resultPageFactory = \$resultPageFactory;
+        \$this->messageManager = \$messageManager;
+        parent::__construct(\$context);
+    }
+
+    /**
+     * Load the page defined in view/frontend/layout/sample_index_index.xml
+     *
+     * @return \Magento\Framework\View\Result\Page
+     */
+    public function execute()
+    {
+        \$pageFactory = \$this->resultPageFactory->create();
+        ${0}
+        return \$pageFactory;
+    }
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mg-mod-controller</tabTrigger>
+
+	<!-- Optional: Set Description -->
+	<description>Module : Controller/*.php</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.xml</scope> -->
+</snippet>
